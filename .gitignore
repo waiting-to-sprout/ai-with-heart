@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 数据文件（隐私保护）
+data/*.json
+data/*.db
+data/*.sqlite
+diaries_raw/
+
+# 内化数据（包含用户日记内容）
+internalized_wisdom.json
+internalization_report.md
+internalize_diaries.py
+
+# 临时文件
+*.tmp
+*.log
+*.ab
+
+# 系统文件
+.DS_Store
+Thumbs.db
