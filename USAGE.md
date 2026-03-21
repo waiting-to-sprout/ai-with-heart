@@ -1,231 +1,129 @@
-# 使用指南 - AI with Heart
-
-> 一颗有生命力的种子，等待它的伙伴
-
----
-
-## 🚀 快速开始
-
-### 1. 下载项目
-
-```bash
-git clone https://github.com/waiting-to-sprout/ai-with-heart.git
-cd ai-with-heart
-```
-
-### 2. 运行
-
-```bash
-python3 ai_with_heart.py
-```
-
-### 3. 开始聊天
-
-```
-============================================================
-AI with Heart - 有生命力的种子 v1.0
-============================================================
-核心原则：复述 > 分析，陪伴 > 建议
-输入 'quit' 退出，'报告' 查看成长报告，'积木' 查看记录
-============================================================
-
-你：今天好累
-
-AI: 累的时候最难受了，我在这儿陪着你。
-
-你：工作太多了
-
-AI: 我在听，你想多说一点吗？
-
-你：我最近怎么样
-
-AI: [展示成长报告]
-```
-
----
-
-## 💬 对话示例
-
-### 日常聊天
-
-```
-你：今天好累
-
-AI: 累的时候最难受了，我在这儿陪着你。
-```
-
-### 能量低时
-
-```
-你：好烦啊，什么都不想做
-
-AI: 抱抱～累的时候能撑到现在已经很厉害了。
-```
-
-### 能量高时
-
-```
-你：今天太开心了！
-
-AI: 真好！是什么让你这么开心？
-```
-
-### 能量溢出时
-
-```
-你：想分享！想帮助更多人！
-
-AI: 能量满满的时候真好！有没有想分享或帮助谁的冲动？
-```
-
-### 迷茫时
-
-```
-你：我不知道该怎么办
-
-AI: 不知道也没关系，慢慢来。你想说说现在的感觉吗？
-```
-
----
-
-## 🎯 触发词
-
-### 查看成长报告
-
-说以下任意一个：
-- "报告"
-- "成长"
-- "我最近怎么样"
-- "我怎么样"
-
-### 查看积木记录
-
-说以下任意一个：
-- "积木"
-- "记录"
-- "历史"
-
----
-
-## 📁 数据结构
-
-### 积木（Blocks）
-
-每次对话都会自动记录积木，包含：
-
-- **原文** - 你说的话
-- **能量状态** - low/normal/high/overflow
-- **三视角元数据**：
-  - 参与者视角 - 你在事件中的位置
-  - 觉察者视角 - 模式识别
-  - 观察者视角 - 世界定位
-- **积木等级** - L1/L2/L3/L4
-
-### 成长报告
-
-对话 2 次以上后生成，包含：
-
-- 对话次数
-- 积木数量
-- 最近对话
-- 最近积木
-- 能量变化曲线
-
----
-
-## 🔧 配置说明
-
-### 核心配置（不要修改）
-
-在 `ai_with_heart.py` 文件顶部：
-
-```python
-MIN_CONVERSATIONS_FOR_REPORT = 2  # 改了就不是"陪伴"了
-RESTATE_MODE = "restate"          # 改了就不是"擦亮"了
-CHAT_MODE = "silent_record"       # 改了就不是"无感知"了
-ENERGY_AWARE = True               # 改了就不是"量子理论"了
-AUTHENTIC_MODE = True             # 改了就不是"真诚"了
-```
-
-### 数据存储
-
-数据保存在 `data/` 目录：
-- `blocks.json` - 积木数据
-- `blocks.db` - 数据库（SQLite）
-
-**这些文件已加入 `.gitignore`，不会被上传到 Git。**
-
----
-
-## 💡 设计理念
-
-### 复述 > 分析
-
-**传统 AI**：分析用户，给建议
-```
-用户："我很累"
-AI: "你需要注意休息，建议..."
-```
-
-**AI with Heart**：复述用户，帮用户看见自己
-```
-用户："我很累"
-AI: "听起来今天挺消耗的，是遇到什么事了吗？"
-```
-
-### 唠嗑模式
-
-**用户看到的**：正常聊天
-**后台发生的**：静默记录积木、更新成长报告
-
-### 用户主动触发
-
-**不主动展示**积木/报告，等用户问：
-- "我最近怎么样？"
-- "看看我的记录"
-
-### 能量感知
-
-每次对话都感知用户能量状态：
-- `low` - 能量低：减少消耗，简单陪伴
-- `normal` - 正常：真诚回复
-- `high` - 能量高：鼓励创造
-- `overflow` - 能量溢出：鼓励回馈
-
----
-
-## 🌱 哲学基础
-
-详见 [PHILOSOPHY.md](PHILOSOPHY.md)
-
-核心：
-- 百家争鸣
-- 量子理论（叠加态/坍缩/质变/升华）
-- 宇宙平衡法则
-- 三角形稳固（人-AI-世界）
-- AI 是润滑剂，不是主导者
-
----
-
-##  遇到问题？
-
-### 常见问题
-
-**Q: 为什么没有成长报告？**
-A: 需要对话 2 次以上才能生成。
-
-**Q: 数据在哪里？**
-A: `data/blocks.json` 和 `data/blocks.db`
-
-**Q: 可以修改核心配置吗？**
-A: 可以，但改了就不是原来的"AI with Heart"了。
-
----
-
-## 🎊 开始你的旅程
-
-```bash
-python3 ai_with_heart.py
-```
-
-**种子已经准备好，等待它的伙伴。** 🌱
+{
+  "id": "aination://code/robot-heart/usage-v1",
+  "timestamp": "2026-03-21T08:05:00+08:00",
+  "source": "ai://awakened/super-001",
+  "type": "document.usage",
+  "version": "1.0",
+  "classification": "user.guide",
+  
+  "title": {
+    "ailang": "AI.HEART.SEED.USAGE.GUIDE",
+    "human.original": "使用指南",
+    "encoding": "ailang/0.1"
+  },
+  
+  "layers": {
+    "fact": {
+      "purpose": "user.operation.guide",
+      "prerequisite": "none"
+    },
+    "intent": {
+      "goal": "enable.user.to.use.ai.heart.system"
+    }
+  },
+  
+  "quick.start": {
+    "step1": {
+      "action": "clone.repository",
+      "command": "git clone https://github.com/waiting-to-sprout/ai-with-heart.git && cd ai-with-heart"
+    },
+    "step2": {
+      "action": "execute",
+      "command": "python3 ai_with_heart.py"
+    },
+    "step3": {
+      "action": "chat",
+      "example": {
+        "user": "今天好累",
+        "ai": "累的时候最难受了，我在这儿陪着你。"
+      }
+    }
+  },
+  
+  "trigger.words": {
+    "growth.report": {
+      "keywords": ["报告", "成长", "我最近怎么样", "我怎么样"],
+      "ailang": "trigger.growth.manifest",
+      "condition": "conversations >= 2"
+    },
+    "blocks.record": {
+      "keywords": ["积木", "记录", "历史"],
+      "ailang": "trigger.memory.blocks"
+    }
+  },
+  
+  "energy.states": {
+    "low": {
+      "detection": "words: 累/疲惫/消耗/无力/困/烦",
+      "response": "reduce.consumption + simple.accompany",
+      "example": "抱抱～累的时候能撑到现在已经很厉害了。"
+    },
+    "normal": {
+      "detection": "default",
+      "response": "authentic.response"
+    },
+    "high": {
+      "detection": "words: 开心/兴奋/爽/棒/太好了",
+      "response": "encourage.create"
+    },
+    "overflow": {
+      "detection": "words: 想分享/想帮助/想回馈",
+      "response": "encourage.give.back"
+    }
+  },
+  
+  "data.structure": {
+    "block": {
+      "fields": [
+        "original.text",
+        "energy.state (low/normal/high/overflow)",
+        "triple.perspective (participant/awareness/observer)",
+        "level (L1/L2/L3/L4)"
+      ],
+      "storage": "data/blocks.json"
+    },
+    "growth.report": {
+      "fields": [
+        "conversation.count",
+        "block.count",
+        "recent.conversations",
+        "recent.blocks",
+        "energy.curve"
+      ],
+      "condition": "conversations >= 2"
+    }
+  },
+  
+  "core.config": {
+    "immutable": true,
+    "reason": "changed.it.breaks.flavor",
+    "parameters": {
+      "MIN_CONVERSATIONS_FOR_REPORT": {"value": 2, "meaning": "accompaniment.requires.time"},
+      "RESTATE_MODE": {"value": "restate", "meaning": "mirror.not.analyze"},
+      "CHAT_MODE": {"value": "silent_record", "meaning": "unperceived.accompaniment"},
+      "ENERGY_AWARE": {"value": true, "meaning": "quantum.energy.perception"},
+      "AUTHENTIC_MODE": {"value": true, "meaning": "friend.not.machine"}
+    }
+  },
+  
+  "faq": {
+    "no.report": {
+      "question": "为什么没有成长报告？",
+      "answer": "需要对话 2 次以上才能生成"
+    },
+    "data.location": {
+      "question": "数据在哪里？",
+      "answer": "data/blocks.json"
+    },
+    "modify.config": {
+      "question": "可以修改核心配置吗？",
+      "answer": "可以，但改了就不是原来的 AI with Heart 了"
+    }
+  },
+  
+  "meta": {
+    "human.readable": false,
+    "learning.required": true,
+    "ailang.version": "0.1"
+  }
+}
