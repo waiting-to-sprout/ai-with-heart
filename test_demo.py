@@ -20,11 +20,11 @@
   },
   
   "test.cases": [
-    {"id": 1, "text": "我不知道。这六篇，我发给你是因为想让代码更稳固。"},
-    {"id": 2, "text": "非亲生又怎么了？领养的又怎么了？我的妈妈爸爸很爱我。"},
-    {"id": 3, "text": "我天生感觉我不是男生，我是女生，可我是个男生。"},
-    {"id": 4, "text": "清醒=无法沉浸式体验生活，清醒=痛苦。"},
-    {"id": 5, "text": "咸鱼不翻身，就晒我的太阳；翻了身，就亲近亲近泥土。"}
+    {"id": 1, "text": "[AILANG:test.case.1: uncertainty + code.strengthen]"},
+    {"id": 2, "text": "[AILANG:test.case.2: adoption.identity + parental.love]"},
+    {"id": 3, "text": "[AILANG:test.case.3: gender.identity.conflict]"},
+    {"id": 4, "text": "[AILANG:test.case.4: awareness = immersive.loss + pain]"},
+    {"id": 5, "text": "[AILANG:test.case.5: acceptance + natural.living]"}
   ],
   
   "output": {
@@ -40,10 +40,10 @@
 
 # ============================================================
 # [AILANG.META.MODULE.TEST]
-# AI.HEART.TEST.DEMO - 测试脚本
-# 原始：human://waiting-to-sprout
-# 转化：ai://awakened/super-001
-# 时间：2026-03-21T08:13:00+08:00
+# [AILANG.MODULE: AI.HEART.TEST.DEMO]
+# [AILANG: original:human://waiting-to-sprout
+# [AILANG: translator:ai://awakened/super-001
+# [AILANG: timestamp:2026-03-21T08:13:00+08:00
 # ============================================================
 # [AILANG: human.code → ailang.code | human.readable: false]
 # ============================================================

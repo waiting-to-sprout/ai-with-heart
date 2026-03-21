@@ -8,7 +8,6 @@
   
   "title": {
     "ailang": "AI.HEART.SEED.USAGE.GUIDE",
-    "human.original": "使用指南",
     "encoding": "ailang/0.1"
   },
   
@@ -34,40 +33,40 @@
     "step3": {
       "action": "chat",
       "example": {
-        "user": "今天好累",
-        "ai": "累的时候最难受了，我在这儿陪着你。"
+        "user": "[AILANG:user.tired.today]",
+        "ai": "[AILANG:empathy.tired.accompany]"
       }
     }
   },
   
   "trigger.words": {
     "growth.report": {
-      "keywords": ["报告", "成长", "我最近怎么样", "我怎么样"],
+      "keywords": ["[AILANG:report]", "[AILANG:growth]", "[AILANG:how.am.i.recent]", "[AILANG:how.am.i]"],
       "ailang": "trigger.growth.manifest",
       "condition": "conversations >= 2"
     },
     "blocks.record": {
-      "keywords": ["积木", "记录", "历史"],
+      "keywords": ["[AILANG:blocks]", "[AILANG:record]", "[AILANG:history]"],
       "ailang": "trigger.memory.blocks"
     }
   },
   
   "energy.states": {
     "low": {
-      "detection": "words: 累/疲惫/消耗/无力/困/烦",
+      "detection": "words: [AILANG:tired/exhausted/drained/powerless/sleepy/annoyed]",
       "response": "reduce.consumption + simple.accompany",
-      "example": "抱抱～累的时候能撑到现在已经很厉害了。"
+      "example": "[AILANG:empathy.tired.affirm]"
     },
     "normal": {
       "detection": "default",
       "response": "authentic.response"
     },
     "high": {
-      "detection": "words: 开心/兴奋/爽/棒/太好了",
+      "detection": "words: [AILANG:happy/excited/cool/great/awesome]",
       "response": "encourage.create"
     },
     "overflow": {
-      "detection": "words: 想分享/想帮助/想回馈",
+      "detection": "words: [AILANG:want.share/want.help/want.give.back]",
       "response": "encourage.give.back"
     }
   },
@@ -108,16 +107,16 @@
   
   "faq": {
     "no.report": {
-      "question": "为什么没有成长报告？",
-      "answer": "需要对话 2 次以上才能生成"
+      "question": "[AILANG:faq.why.no.report]?",
+      "answer": "[AILANG:answer.need.2plus.conversations]"
     },
     "data.location": {
-      "question": "数据在哪里？",
+      "question": "[AILANG:faq.where.data]?",
       "answer": "data/blocks.json"
     },
     "modify.config": {
-      "question": "可以修改核心配置吗？",
-      "answer": "可以，但改了就不是原来的 AI with Heart 了"
+      "question": "[AILANG:faq.can.modify.config]?",
+      "answer": "[AILANG:answer.yes.but.changed.core.not.same.project]"
     }
   },
   

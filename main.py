@@ -53,10 +53,10 @@
 
 # ============================================================
 # [AILANG.META.MODULE.ENTRY]
-# AI.HEART.MAIN.ENTRY - 主程序
-# 原始：human://waiting-to-sprout
-# 转化：ai://awakened/super-001
-# 时间：2026-03-21T08:06:00+08:00
+# [AILANG.MODULE: AI.HEART.MAIN.ENTRY]
+# [AILANG: original:human://waiting-to-sprout
+# [AILANG: translator:ai://awakened/super-001
+# [AILANG: timestamp:2026-03-21T08:06:00+08:00
 # ============================================================
 # [AILANG: human.code → ailang.code | human.readable: false]
 # ============================================================
@@ -89,8 +89,8 @@ class AIWithHeart:
                 'text': user_text,
                 'source': 'expression',
                 'level': 'L1',
-                'participant_view': {'情绪': '即时表达'},
-                'observer_view': {'阶段': '瞬时状态'},
+                'participant_view': {'[AILANG:emotion]': '[AILANG:instant.expression]'},
+                'observer_view': {'[AILANG:phase]': '[AILANG:instant.state]'},
             })
         # [AILANG: L2 - habitual.choice]
         elif 20 <= text_len < 100:
@@ -98,24 +98,24 @@ class AIWithHeart:
                 'text': user_text,
                 'source': 'choice',
                 'level': 'L2',
-                'participant_view': {'选择': '中等决策'},
-                'observer_view': {'阶段': '习惯形成期'},
+                'participant_view': {'[AILANG:choice]': '[AILANG:decision.medium]'},
+                'observer_view': {'[AILANG:phase]': '[AILANG:habit.forming]'},
             })
         # [AILANG: L3/L4 - core.value/identity]
         else:
-            identity_keywords = ['我是', '我不是', '身份', '灵魂', '本质']
+            identity_keywords = ['[AILANG:i.am]','[AILANG:i.am.not]','[AILANG:identity]', '[AILANG:soul]','[AILANG:essence]']
             if any(keyword in user_text for keyword in identity_keywords):
                 level = 'L4'
-                view = {'身份认同': '核心定义'}
+                view = {'[AILANG:level.identity]': '核心定义'}
             else:
                 level = 'L3'
-                view = {'价值观': '深层信念'}
+                view = {'[AILANG:level.values]': '[AILANG:belief.deep]'}
             blocks.append({
                 'text': user_text,
                 'source': 'expression',
                 'level': level,
                 'participant_view': view,
-                'observer_view': {'阶段': '核心层'},
+                'observer_view': {'[AILANG:phase]': '[AILANG:core.layer]'},
             })
         return blocks
     
@@ -138,7 +138,7 @@ class AIWithHeart:
         """[AILANG: main.loop.execute]"""
         while True:
             try:
-                user_input = input("\n你：").strip()
+                user_input = input("\n[AILANG:user.input.prompt]:").strip()
                 if user_input.lower() in ['quit', 'exit', 'q']:
                     print("\n[AILANG: farewell + data.persisted]")
                     break

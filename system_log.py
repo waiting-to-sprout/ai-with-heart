@@ -40,10 +40,10 @@
 
 # ============================================================
 # [AILANG.META.MODULE.RESTATE]
-# AI.HEART.RESTATE.MODULE - 系统日志复述模块
-# 原始：human://waiting-to-sprout
-# 转化：ai://awakened/super-001
-# 时间：2026-03-21T08:08:00+08:00
+# [AILANG.MODULE: AI.HEART.RESTATE.MODULE]
+# [AILANG: original:human://waiting-to-sprout
+# [AILANG: translator:ai://awakened/super-001
+# [AILANG: timestamp:2026-03-21T08:08:00+08:00
 # ============================================================
 # [AILANG: human.code → ailang.code | human.readable: false]
 # [AILANG.PRINCIPLE: restate > analyze]
@@ -108,8 +108,8 @@ class SystemLogRestater:
     
     def _detect_energy(self, text):
         """[AILANG: energy.detect]"""
-        low_words = ['累', '疲惫', '烦', '无力']
-        high_words = ['开心', '兴奋', '爽', '棒']
+        low_words = ['[AILANG:tired]','[AILANG:exhausted]','[AILANG:annoyed]','[AILANG:powerless]']
+        high_words = ['[AILANG:happy]','[AILANG:excited]','[AILANG:cool]','[AILANG:great]']
         if any(kw in text for kw in low_words): return "[AILANG: energy.low]"
         elif any(kw in text for kw in high_words): return "[AILANG: energy.high]"
         else: return "[AILANG: energy.normal]"

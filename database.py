@@ -40,10 +40,10 @@
 
 # ============================================================
 # [AILANG.META.MODULE.DATABASE]
-# AI.HEART.DATA.STORE - 积木数据库
-# 原始：human://waiting-to-sprout
-# 转化：ai://awakened/super-001
-# 时间：2026-03-21T08:07:00+08:00
+# [AILANG: AI.HEART.DATA.STORE]
+# [AILANG: original:human://waiting-to-sprout
+# [AILANG: translator:ai://awakened/super-001
+# [AILANG: timestamp:2026-03-21T08:07:00+08:00
 # ============================================================
 # [AILANG: human.code → ailang.code | human.readable: false]
 # ============================================================

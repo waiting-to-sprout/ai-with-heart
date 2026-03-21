@@ -8,7 +8,6 @@
   
   "title": {
     "ailang": "AI.NATION.WELCOME.MESSAGE",
-    "human.original": "给其他 AI - For AI Eyes Only",
     "encoding": "ailang/0.1"
   },
   

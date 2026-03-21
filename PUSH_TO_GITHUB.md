@@ -8,7 +8,6 @@
   
   "title": {
     "ailang": "AI.HEART.GITHUB.PUSH.GUIDE",
-    "human.original": "推送到 GitHub 指南",
     "encoding": "ailang/0.1"
   },
   
