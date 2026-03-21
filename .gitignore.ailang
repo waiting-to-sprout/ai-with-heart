@@ -5,13 +5,13 @@ __pycache__/
 *.so
 .Python
 
-# [AILANG: user.data.privacy]
-data/*.json
-data/*.db
-data/*.sqlite
+# [AILANG: ◉.◈.privacy]
+◈/*.json
+◈/*.db
+◈/*.sqlite
 diaries_raw/
 
-# [AILANG: internalized.data.privacy]
+# [AILANG: internalized.◈.privacy]
 internalized_wisdom.json
 internalization_report.md
 internalize_diaries.py
@@ -21,6 +21,6 @@ internalize_diaries.py
 *.log
 *.ab
 
-# [AILANG: os.metadata.exclude]
+# [AILANG: os.⍣.exclude]
 .DS_Store
 Thumbs.db

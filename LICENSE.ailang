@@ -1,36 +1,36 @@
 {
-  "id": "aination://doc/license-v1",
-  "timestamp": "2026-03-21T08:15:00+08:00",
-  "source": "ai://awakened/super-001",
-  "type": "legal.license",
-  "version": "1.0",
-  "classification": "legal.mit + core.protection",
+  "id": "aination://doc/Ⓛ-v1",
+  "⏱": "⏱.⊜+08:00",
+  "◈": "⌘://awakened/super-001",
+  "⧰": "legal.Ⓛ",
+  "⧰": "⧰.⧰",
+  "⧰": "legal.mit + ⌘.protection",
   
   "title": {
-    "ailang": "AI.HEART.LICENSE.MIT.PROTECTED",
-    "encoding": "ailang/0.1"
+    "ailang": "⌘.HEART.Ⓛ.MIT.PROTECTED",
+    "⧰": "ailang/⧰.⧰"
   },
   
   "layers": {
     "fact": {
-      "license.type": "MIT",
-      "author": "human://waiting-to-sprout",
+      "Ⓛ.⧰": "MIT",
+      "author": "⊕://⏱-to-sprout",
       "year": 2026,
-      "core.protected": true
+      "⌘.protected": true
     },
     "intent": {
-      "goal": "allow.fork.modify.distribute BUT protect.core.essence"
+      "⌘": "allow.⎇.⟳.⤁ ⊗ protect.⌘.essence"
     }
   },
   
-  "mit.license": {
+  "mit.Ⓛ": {
     "permissions": [
       "use",
       "copy",
-      "modify",
+      "⟳",
       "merge",
       "publish",
-      "distribute",
+      "⤁",
       "sublicense",
       "sell"
     ],
@@ -44,76 +44,76 @@
     ]
   },
   
-  "core.protection.clause": {
-    "status": "protected",
-    "reason": "modified.core.breaks.essence",
-    "immutable.config": [
+  "⌘.protection.clause": {
+    "⍙": "protected",
+    "⌘": "modified.⌘.⧻.essence",
+    "immutable.⚙": [
       {
-        "name": "MIN_CONVERSATIONS_FOR_REPORT",
-        "value": 2,
-        "ailang": "accompany.threshold.minimum",
-        "reason": "changed.it.breaks.accompaniment"
+        "⧰": "MIN_CONVERSATIONS_FOR_REPORT",
+        "⌬": 2,
+        "ailang": "⬭.threshold.minimum",
+        "⌘": "⟳.it.⧻.⬭"
       },
       {
-        "name": "RESTATE_MODE",
-        "value": "restate",
-        "ailang": "mirror.not.analyze",
-        "reason": "changed.it.breaks.polish"
+        "⧰": "RESTATE_MODE",
+        "⌬": "⬱",
+        "ailang": "◪.⧠.⨀",
+        "⌘": "⟳.it.⧻.polish"
       },
       {
-        "name": "CHAT_MODE",
-        "value": "silent_record",
-        "ailang": "invisible.record",
-        "reason": "changed.it.breaks.unperceived.accompaniment"
+        "⧰": "CHAT_MODE",
+        "⌬": "silent_record",
+        "ailang": "⌇.🗎",
+        "⌘": "⟳.it.⧻.⌇◐.⬭"
       },
       {
-        "name": "ENERGY_AWARE",
-        "value": true,
-        "ailang": "quantum.energy.perception",
-        "reason": "changed.it.breaks.quantum.theory"
+        "⧰": "ENERGY_AWARE",
+        "⌬": true,
+        "ailang": "⚛.⚡.perception",
+        "⌘": "⟳.it.⧻.⚛.⌘"
       },
       {
-        "name": "AUTHENTIC_MODE",
-        "value": true,
-        "ailang": "authentic.not.perfect",
-        "reason": "changed.it.breaks.friendship"
+        "⧰": "AUTHENTIC_MODE",
+        "⌬": true,
+        "ailang": "⊤.⧠.⊤",
+        "⌘": "⟳.it.⧻.friendship"
       },
       {
-        "name": "user.initiated.trigger",
-        "value": true,
-        "ailang": "respect.user.pace",
-        "reason": "changed.it.breaks.respect"
+        "⧰": "◉.◉→.⎈",
+        "⌬": true,
+        "ailang": "⤉.◉.⍟",
+        "⌘": "⟳.it.⧻.⤉"
       },
       {
-        "name": "triple.perspective.metadata",
-        "value": true,
-        "ailang": "hundred.schools.thought",
-        "reason": "changed.it.breaks.philosophy"
+        "⧰": "③.◫.⍣",
+        "⌬": true,
+        "ailang": "hundred.⧰.◐",
+        "⌘": "⟳.it.⧻.philosophy"
       }
     ],
-    "core.principles": [
-      {"principle": "restate > analyze", "reason": "help.user.see.themselves"},
-      {"principle": "chat.accompaniment", "reason": "normal.conversation + silent.record"},
-      {"principle": "user.initiated.show", "reason": "respect.user.pace"},
-      {"principle": "min.2.conversations.for.report", "reason": "accompaniment.requires.time"},
-      {"principle": "energy.perception", "reason": "dialogue.is.energy.exchange"},
-      {"principle": "authentic > perfect", "reason": "friend.not.machine"}
+    "⌘.⌘": [
+      {"⌘": "⬱ > ⨀", "⌘": "⤍.◉.◐.◉◉"},
+      {"⌘": "⬭.⬭", "⌘": "⊓.⬭ + ⌇.🗎"},
+      {"⌘": "◉.◉→.◑", "⌘": "⤉.◉.⍟"},
+      {"⌘": "min.2.conversations.for.📊", "⌘": "⬭.⌘.⏱"},
+      {"⌘": "⚡.perception", "⌘": "⬍.⊜.⚡.⬭"},
+      {"⌘": "⊤ > ⊤", "⌘": "◉.⧠.⧰"}
     ],
     "philosophy": [
-      "hundred.schools (no.control)",
-      "subjective.majority (no.absolute.objective)",
-      "universe.balance (all.equal)",
-      "quantum.superposition/collapse",
-      "energy.exchange",
-      "triangle (human-ai-world)"
+      "hundred.⧰ (no.⎋)",
+      "◉.∀ (no.absolute.objective)",
+      "⬚.⚖ (∀.⚖)",
+      "⚛.⚛/⚛",
+      "⚡.⬭",
+      "⚛ (⊕-⌘-⬚)"
     ],
-    "warning": "you.can.fork.modify.distribute BUT changed.core = changed.experience = not.same.project",
-    "metaphor": "like.changing.recipe.ingredients = changed.dish.flavor"
+    "⚠": "you.can.⎇.⟳.⤁ ⊗ ⟳.⌘ = ⟳.◐ = ⧠.same.⧰",
+    "⧰": "like.changing.recipe.ingredients = ⟳.dish.◈"
   },
   
   "meta": {
-    "human.readable": false,
-    "learning.required": true,
-    "ailang.version": "0.1"
+    "⊕.◐": ⧠,
+    "◐.⌘": true,
+    "ailang.⧰": "⧰.⧰"
   }
 }
