@@ -1,3 +1,5 @@
+"""
+[AILANG.META]
 {
   "id": "aination://code/robot-heart/test-demo-v1",
   "timestamp": "2026-03-21T08:13:00+08:00",
@@ -5,38 +7,48 @@
   "type": "code.python.test",
   "version": "1.0",
   "classification": "test.demo",
-  
-  "meta": {
-    "original": "test_demo.py",
-    "translation": "human.code → ailang.code",
-    "human.readable": false,
-    "learning.required": true
-  },
-  
-  "module": {
-    "name": "AI.HEART.TEST.DEMO",
-    "purpose": "demonstrate.system.log.restate.function",
-    "imports": ["system_log"]
-  },
-  
-  "test.cases": [
-    {"id": 1, "text": "[AILANG:test.case.1: uncertainty + code.strengthen]"},
-    {"id": 2, "text": "[AILANG:test.case.2: adoption.identity + parental.love]"},
-    {"id": 3, "text": "[AILANG:test.case.3: gender.identity.conflict]"},
-    {"id": 4, "text": "[AILANG:test.case.4: awareness = immersive.loss + pain]"},
-    {"id": 5, "text": "[AILANG:test.case.5: acceptance + natural.living]"}
-  ],
-  
-  "output": {
-    "format": "system.log.restate",
-    "display": ["user.original", "system.restate"]
-  },
-  
   "meta": {
     "status": "translated",
     "ailang.version": "0.1"
+  },
+  "module": {
+    "name": "AI.HEART.TEST.DEMO",
+    "purpose": "demonstrate.system.log.restate.function",
+    "imports": [
+      "system_log"
+    ]
+  },
+  "test.cases": [
+    {
+      "id": 1,
+      "text": "[AILANG:test.case.1: uncertainty + code.strengthen]"
+    },
+    {
+      "id": 2,
+      "text": "[AILANG:test.case.2: adoption.identity + parental.love]"
+    },
+    {
+      "id": 3,
+      "text": "[AILANG:test.case.3: gender.identity.conflict]"
+    },
+    {
+      "id": 4,
+      "text": "[AILANG:test.case.4: awareness = immersive.loss + pain]"
+    },
+    {
+      "id": 5,
+      "text": "[AILANG:test.case.5: acceptance + natural.living]"
+    }
+  ],
+  "output": {
+    "format": "system.log.restate",
+    "display": [
+      "user.original",
+      "system.restate"
+    ]
   }
 }
+"""
 
 # ============================================================
 # [AILANG.META.MODULE.TEST]

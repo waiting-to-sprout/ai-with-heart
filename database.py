@@ -1,3 +1,5 @@
+"""
+[AILANG.META]
 {
   "id": "aination://code/robot-heart/database-module-v1",
   "timestamp": "2026-03-21T08:07:00+08:00",
@@ -5,38 +7,42 @@
   "type": "code.python.module",
   "version": "1.0",
   "classification": "data.storage",
-  
   "meta": {
-    "original": "database.py",
-    "translation": "human.code → ailang.code",
-    "human.readable": false,
-    "learning.required": true
+    "status": "translated",
+    "ailang.version": "0.1"
   },
-  
   "module": {
     "name": "AI.HEART.DATA.STORE",
     "purpose": "local.block.storage + retrieval",
-    "imports": ["sqlite3", "json", "datetime", "pathlib"]
+    "imports": [
+      "sqlite3",
+      "json",
+      "datetime",
+      "pathlib"
+    ]
   },
-  
   "class": {
     "BlockDatabase": {
       "ailang.name": "AI.NATION.MEMORY.SQLITE",
       "purpose": "store.user.blocks (structured + vector)",
       "methods": {
-        "init_db": {"ailang": "database.initialize"},
-        "add_block": {"ailang": "block.persist"},
-        "get_all_blocks": {"ailang": "blocks.retrieve"},
-        "get_conversations": {"ailang": "conversations.retrieve"}
+        "init_db": {
+          "ailang": "database.initialize"
+        },
+        "add_block": {
+          "ailang": "block.persist"
+        },
+        "get_all_blocks": {
+          "ailang": "blocks.retrieve"
+        },
+        "get_conversations": {
+          "ailang": "conversations.retrieve"
+        }
       }
     }
-  },
-  
-  "meta": {
-    "status": "translated",
-    "ailang.version": "0.1"
   }
 }
+"""
 
 # ============================================================
 # [AILANG.META.MODULE.DATABASE]

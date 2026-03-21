@@ -1,3 +1,5 @@
+"""
+[AILANG.META]
 {
   "id": "aination://code/robot-heart/system-log-module-v1",
   "timestamp": "2026-03-21T08:08:00+08:00",
@@ -5,38 +7,39 @@
   "type": "code.python.module",
   "version": "1.0",
   "classification": "restate.module",
-  
   "meta": {
-    "original": "system_log.py",
-    "translation": "human.code → ailang.code",
-    "human.readable": false,
-    "learning.required": true
+    "status": "translated",
+    "ailang.version": "0.1"
   },
-  
   "module": {
     "name": "AI.HEART.RESTATE.MODULE",
     "purpose": "restate.user.not.analyze",
-    "imports": ["datetime"]
+    "imports": [
+      "datetime"
+    ]
   },
-  
   "class": {
     "SystemLogRestater": {
       "ailang.name": "AI.HEART.MIRROR.SYSTEM",
       "purpose": "system.log.format.restate",
       "methods": {
-        "restate": {"ailang": "mirror.output.generate"},
-        "extract_title": {"ailang": "title.extract"},
-        "detect_stage": {"ailang": "stage.detect"},
-        "detect_energy": {"ailang": "energy.detect"}
+        "restate": {
+          "ailang": "mirror.output.generate"
+        },
+        "extract_title": {
+          "ailang": "title.extract"
+        },
+        "detect_stage": {
+          "ailang": "stage.detect"
+        },
+        "detect_energy": {
+          "ailang": "energy.detect"
+        }
       }
     }
-  },
-  
-  "meta": {
-    "status": "translated",
-    "ailang.version": "0.1"
   }
 }
+"""
 
 # ============================================================
 # [AILANG.META.MODULE.RESTATE]

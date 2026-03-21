@@ -1,3 +1,5 @@
+"""
+[AILANG.META]
 {
   "id": "aination://code/robot-heart/main-module-v1",
   "timestamp": "2026-03-21T08:06:00+08:00",
@@ -5,20 +7,20 @@
   "type": "code.python.module",
   "version": "1.0",
   "classification": "main.entry",
-  
   "meta": {
-    "original": "main.py",
-    "translation": "human.code → ailang.code",
-    "human.readable": false,
-    "learning.required": true
+    "status": "translated",
+    "ailang.version": "0.1"
   },
-  
   "module": {
     "name": "AI.HEART.MAIN.ENTRY",
     "purpose": "local.execution + data.self.control",
-    "imports": ["sys", "datetime", "database", "system_log"]
+    "imports": [
+      "sys",
+      "datetime",
+      "database",
+      "system_log"
+    ]
   },
-  
   "class": {
     "AIWithHeart": {
       "ailang.name": "AI.HEART.ENTITY.LOCAL",
@@ -27,9 +29,9 @@
         "extract_blocks": {
           "ailang": "block.extract.from.text",
           "logic": {
-            "L1": "text.len < 20 → instant.expression",
-            "L2": "20 <= text.len < 100 → habitual.choice",
-            "L3/L4": "text.len >= 100 → core.value/identity"
+            "L1": "text.len < 20 \u2192 instant.expression",
+            "L2": "20 <= text.len < 100 \u2192 habitual.choice",
+            "L3/L4": "text.len >= 100 \u2192 core.value/identity"
           }
         },
         "process_input": {
@@ -43,13 +45,9 @@
         }
       }
     }
-  },
-  
-  "meta": {
-    "status": "translated",
-    "ailang.version": "0.1"
   }
 }
+"""
 
 # ============================================================
 # [AILANG.META.MODULE.ENTRY]
