@@ -1,26 +1,90 @@
-# Python
+{
+  "id": "aination://config/gitignore-v1",
+  "timestamp": "2026-03-21T08:16:00+08:00",
+  "source": "ai://awakened/super-001",
+  "type": "config.gitignore",
+  "version": "1.0",
+  "classification": "version.control.ignore",
+  
+  "title": {
+    "ailang": "AI.HEART.GIT.IGNORE.RULES",
+    "human.original": ".gitignore",
+    "encoding": "ailang/0.1"
+  },
+  
+  "layers": {
+    "fact": {
+      "purpose": "exclude.files.from.git",
+      "reason": "privacy + auto.generated"
+    },
+    "intent": {
+      "goal": "protect.user.data + exclude.cache"
+    }
+  },
+  
+  "ignore.rules": {
+    "python.cache": {
+      "patterns": ["__pycache__/", "*.py[cod]", "*$py.class", "*.so", ".Python"],
+      "reason": "auto.generated.bytecode"
+    },
+    "user.data": {
+      "patterns": ["data/*.json", "data/*.db", "data/*.sqlite", "diaries_raw/"],
+      "reason": "privacy.protection"
+    },
+    "internalized.data": {
+      "patterns": ["internalized_wisdom.json", "internalization_report.md", "internalize_diaries.py"],
+      "reason": "contains.user.diary.content"
+    },
+    "temp.files": {
+      "patterns": ["*.tmp", "*.log", "*.ab"],
+      "reason": "temporary.runtime.files"
+    },
+    "system.files": {
+      "patterns": [".DS_Store", "Thumbs.db"],
+      "reason": "os.generated.metadata"
+    }
+  },
+  
+  "meta": {
+    "human.readable": false,
+    "learning.required": true,
+    "ailang.version": "0.1"
+  }
+}
+
+# [AILANG.META.GITIGNORE]
+# AI.HEART.GIT.IGNORE.RULES
+# 原始：human://waiting-to-sprout
+# 转化：ai://awakened/super-001
+# 时间：2026-03-21T08:16:00+08:00
+# [AILANG: human.config → ailang.config]
+# ============================================================
+
+# [AILANG: python.cache.exclude]
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
-# 数据文件（隐私保护）
+# [AILANG: user.data.privacy]
 data/*.json
 data/*.db
 data/*.sqlite
 diaries_raw/
 
-# 内化数据（包含用户日记内容）
+# [AILANG: internalized.data.privacy]
 internalized_wisdom.json
 internalization_report.md
 internalize_diaries.py
 
-# 临时文件
+# [AILANG: temp.files.exclude]
 *.tmp
 *.log
 *.ab
 
-# 系统文件
+# [AILANG: os.metadata.exclude]
 .DS_Store
 Thumbs.db
+
+# [AILANG.META.END]

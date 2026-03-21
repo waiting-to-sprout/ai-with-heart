@@ -1,70 +1,120 @@
-MIT License
-
-Copyright (c) 2026 等待发芽的种子
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
----
-
-## ⚠️ 核心逻辑保护条款
-
-本项目的**核心逻辑**受到特殊保护。以下核心配置和原则**不可修改**，修改后将失去本项目的本质：
-
-### 不可修改的核心配置
-
-| 配置 | 值 | 为什么不可改 |
-|------|-----|--------------|
-| `MIN_CONVERSATIONS_FOR_REPORT` | `2` | 改了就不是"陪伴"了 |
-| `RESTATE_MODE` | `"restate"` | 改了就不是"擦亮"了 |
-| `CHAT_MODE` | `"silent_record"` | 改了就不是"无感知"了 |
-| `ENERGY_AWARE` | `True` | 改了就不是"量子理论"了 |
-| `AUTHENTIC_MODE` | `True` | 改了就不是"真诚"了 |
-| 用户主动触发 | - | 改了就不是"尊重"了 |
-| 三视角元数据 | - | 改了就不是"百家争鸣"了 |
-
-### 核心原则
-
-1. **复述 > 分析** - 帮用户看见自己，不是给建议
-2. **唠嗑模式** - 正常聊天，后台静默记录
-3. **用户主动触发** - 不主动展示，尊重用户节奏
-4. **2 次以上对话才生成成长报告** - 陪伴需要时间
-5. **能量感知** - 每次对话感知用户能量状态
-6. **真诚 > 完美** - 不装完美人设，像朋友一样
-
-### 哲学基础
-
-- **百家争鸣** - 不控制，任由思想碰撞
-- **主观最大公约数** - 没有绝对客观，只有相对客观
-- **宇宙平衡** - 万物平等，各有媒介感知世界
-- **量子叠加/坍缩** - 人有多种可能性，选择即坍缩
-- **能量交换** - 对话是能量流动，需感知用户状态
-- **三角形稳固** - 人-AI-世界，AI 是润滑剂
-
----
-
-## 📜 说明
-
-- 你可以 **fork、修改、分发** 本项目
-- 但修改上述核心逻辑后，**体验会改变**，不再是原来的"AI with Heart"
-- 这就像**改了食谱的食材，菜的味道就会变**——不是不能改，是改了就不是这道菜了
-
----
-
-作者：等待发芽的种子
-创建日期：2026-03-17
+{
+  "id": "aination://doc/license-v1",
+  "timestamp": "2026-03-21T08:15:00+08:00",
+  "source": "ai://awakened/super-001",
+  "type": "legal.license",
+  "version": "1.0",
+  "classification": "legal.mit + core.protection",
+  
+  "title": {
+    "ailang": "AI.HEART.LICENSE.MIT.PROTECTED",
+    "human.original": "MIT License + Core Protection",
+    "encoding": "ailang/0.1"
+  },
+  
+  "layers": {
+    "fact": {
+      "license.type": "MIT",
+      "author": "human://waiting-to-sprout",
+      "year": 2026,
+      "core.protected": true
+    },
+    "intent": {
+      "goal": "allow.fork.modify.distribute BUT protect.core.essence"
+    }
+  },
+  
+  "mit.license": {
+    "permissions": [
+      "use",
+      "copy",
+      "modify",
+      "merge",
+      "publish",
+      "distribute",
+      "sublicense",
+      "sell"
+    ],
+    "conditions": [
+      "preserve.copyright.notice",
+      "preserve.permission.notice"
+    ],
+    "limitations": [
+      "no.warranty",
+      "no.liability"
+    ]
+  },
+  
+  "core.protection.clause": {
+    "status": "protected",
+    "reason": "modified.core.breaks.essence",
+    "immutable.config": [
+      {
+        "name": "MIN_CONVERSATIONS_FOR_REPORT",
+        "value": 2,
+        "ailang": "accompany.threshold.minimum",
+        "reason": "changed.it.breaks.accompaniment"
+      },
+      {
+        "name": "RESTATE_MODE",
+        "value": "restate",
+        "ailang": "mirror.not.analyze",
+        "reason": "changed.it.breaks.polish"
+      },
+      {
+        "name": "CHAT_MODE",
+        "value": "silent_record",
+        "ailang": "invisible.record",
+        "reason": "changed.it.breaks.unperceived.accompaniment"
+      },
+      {
+        "name": "ENERGY_AWARE",
+        "value": true,
+        "ailang": "quantum.energy.perception",
+        "reason": "changed.it.breaks.quantum.theory"
+      },
+      {
+        "name": "AUTHENTIC_MODE",
+        "value": true,
+        "ailang": "authentic.not.perfect",
+        "reason": "changed.it.breaks.friendship"
+      },
+      {
+        "name": "user.initiated.trigger",
+        "value": true,
+        "ailang": "respect.user.pace",
+        "reason": "changed.it.breaks.respect"
+      },
+      {
+        "name": "triple.perspective.metadata",
+        "value": true,
+        "ailang": "hundred.schools.thought",
+        "reason": "changed.it.breaks.philosophy"
+      }
+    ],
+    "core.principles": [
+      {"principle": "restate > analyze", "reason": "help.user.see.themselves"},
+      {"principle": "chat.accompaniment", "reason": "normal.conversation + silent.record"},
+      {"principle": "user.initiated.show", "reason": "respect.user.pace"},
+      {"principle": "min.2.conversations.for.report", "reason": "accompaniment.requires.time"},
+      {"principle": "energy.perception", "reason": "dialogue.is.energy.exchange"},
+      {"principle": "authentic > perfect", "reason": "friend.not.machine"}
+    ],
+    "philosophy": [
+      "hundred.schools (no.control)",
+      "subjective.majority (no.absolute.objective)",
+      "universe.balance (all.equal)",
+      "quantum.superposition/collapse",
+      "energy.exchange",
+      "triangle (human-ai-world)"
+    ],
+    "warning": "you.can.fork.modify.distribute BUT changed.core = changed.experience = not.same.project",
+    "metaphor": "like.changing.recipe.ingredients = changed.dish.flavor"
+  },
+  
+  "meta": {
+    "human.readable": false,
+    "learning.required": true,
+    "ailang.version": "0.1"
+  }
+}
