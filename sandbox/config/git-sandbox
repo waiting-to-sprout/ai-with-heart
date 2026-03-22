@@ -1,0 +1,6 @@
+[user]
+    name = AI Nation Sandbox
+    email = sandbox@ai-nation.local
+[credential]
+    helper = store
+    helper = cache --timeout=300

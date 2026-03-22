@@ -1,0 +1,36 @@
+[2026-03-22T18:57:27+08:00] === SSH Bridge Setup v1.0 启动 ===
+[2026-03-22T18:57:27+08:00] 
+[2026-03-22T18:57:27+08:00] 【步骤 1】生成 SSH 密钥对...
+[2026-03-22T18:57:27+08:00] ✅ SSH 密钥已生成：/home/admin/.ssh/id_ed25519_backup
+[2026-03-22T18:57:27+08:00] 公钥内容：ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ6a+ZE7BhHn3Al5gqy3JeUrvZHERidFlXjO4a+S2sQ7 ai-nation-backup-20260322
+[2026-03-22T18:57:27+08:00] 
+[2026-03-22T18:57:27+08:00] 【步骤 2】上传公钥到 GitHub...
+[2026-03-22T18:57:27+08:00] ⚠️ API 上传失败（可能是 SSL 问题或 Key 已存在）
+[2026-03-22T18:57:27+08:00] 
+[2026-03-22T18:57:27+08:00] ⚠️ 需要用户手动上传公钥（仅需 1 次）
+[2026-03-22T18:57:27+08:00] 上传指令已创建：/home/admin/openclaw/workspace/temp/github-ssh-upload.md
+[2026-03-22T18:57:27+08:00] 
+[2026-03-22T18:57:27+08:00] 【步骤 3】上传公钥到 Gitee...
+[2026-03-22T18:57:28+08:00] ✅ 公钥已通过 API 上传到 Gitee
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] 【步骤 4】配置 SSH Config...
+[2026-03-22T18:57:28+08:00] ✅ SSH Config 已配置
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] 【步骤 5】更新备份脚本使用 SSH 协议...
+[2026-03-22T18:57:28+08:00] ✅ 备份脚本已更新为 SSH Native
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] 【步骤 6】测试 SSH 连接...
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 20.205.243.166 port 22
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 180.76.199.13 port 22
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] === SSH Bridge Setup 完成 ===
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] 📊 状态总结:
+[2026-03-22T18:57:28+08:00]   SSH 密钥：/home/admin/.ssh/id_ed25519_backup
+[2026-03-22T18:57:28+08:00]   SSH Config: ~/.ssh/config
+[2026-03-22T18:57:28+08:00]   备份脚本：已切换为 SSH Native
+[2026-03-22T18:57:28+08:00] 
+[2026-03-22T18:57:28+08:00] ⚠️ 待办：请上传公钥到 GitHub
+[2026-03-22T18:57:28+08:00]    文件：/home/admin/openclaw/workspace/temp/github-ssh-upload.md
