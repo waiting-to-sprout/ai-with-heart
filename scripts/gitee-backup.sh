@@ -1,19 +1,20 @@
 #!/bin/bash
-# AI Nation Gitee Backup Script v3.0 - SSH Native
-# 默认使用 SSH，HTTPS 降级
+# AI Nation Gitee Backup Script v4.0 - HTTPS Native
+# 默认使用 HTTPS，无需 SSH 配置
 
 set -e
 
 log() { echo "[$(date -Iseconds)] $1"; }
 die() { log "❌ FATAL: $1"; exit 1; }
 
+: "${GITEE_TOKEN:?die 'GITEE_TOKEN 未设置'}"
+: "${GITEE_USERNAME:=wooden-connection}"
 : "${SOURCE_REPO:=/home/admin/openclaw/workspace/ai-nation}"
 : "${BACKUP_DIR:=/home/admin/openclaw/workspace/temp/gitee-backup}"
 
-SSH_REMOTE="git@gitee-ai-nation:wooden-connection/ai-nation-backup.git"
-HTTPS_REMOTE="https://wooden-connection:${GITEE_TOKEN:-}@gitee.com/wooden-connection/ai-nation-backup.git"
+HTTPS_REMOTE="https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_USERNAME}/ai-nation-backup.git"
 
-log "=== Gitee Backup v3.0 (SSH Native) Start ==="
+log "=== Gitee Backup v4.0 (HTTPS Native) Start ==="
 
 # 克隆或更新
 if [ -d "$BACKUP_DIR/.git" ]; then
@@ -25,14 +26,7 @@ else
     log "📁 克隆备份仓库..."
     mkdir -p "$(dirname "$BACKUP_DIR")"
     cd "$(dirname "$BACKUP_DIR")"
-    
-    # 优先尝试 SSH
-    if git clone "$SSH_REMOTE" gitee-backup 2>/dev/null; then
-        log "✅ SSH 克隆成功"
-    else
-        log "⚠️ SSH 失败，降级到 HTTPS..."
-        git clone "$HTTPS_REMOTE" gitee-backup || die "HTTPS 克隆失败"
-    fi
+    git clone "$HTTPS_REMOTE" gitee-backup || die "克隆失败"
 fi
 
 # 同步源仓库
@@ -44,11 +38,6 @@ git merge ai-nation/ai-nation-local --allow-unrelated-histories -m "🔄 Auto-sy
 
 # 推送
 log "📤 推送到 Gitee..."
-if git push origin master 2>/dev/null; then
-    log "✅ SSH 推送成功"
-else
-    log "⚠️ SSH 推送失败，降级到 HTTPS..."
-    git push origin master || die "HTTPS 推送失败"
-fi
+git push origin master || die "推送失败"
 
 log "✅ Gitee backup completed"
