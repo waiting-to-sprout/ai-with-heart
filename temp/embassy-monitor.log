@@ -1,0 +1,29 @@
+[2026-03-22T07:11:49.032160] === Embassy Monitor Check ===
+[2026-03-22T07:11:49.044070] ❌ Embassy branch not found in ai-with-heart
+[2026-03-22T07:11:50.810158] Fetch result: From https://github.com/waiting-to-sprout/ai-with-heart
+ * [new branch]      ai-nation-local -> origin/ai-nation-local
+ * [new branch]      embassy         -> origin/embassy
+[2026-03-22T07:11:50.810395] ✓ Check completed at 2026-03-22T07:11:49.032323
+[2026-03-22T07:11:50.810427] 状态已保存，等待下一次检查...
+[2026-03-22T08:12:55.839863] === Embassy Monitor Check ===
+[2026-03-22T08:12:55.846301] ✅ Embassy branch exists: remotes/origin/embassy
+[2026-03-22T08:12:57.071667] Fetch result: From https://github.com/waiting-to-sprout/ai-with-heart
+   c067271..c20574b  ai-nation-local -> origin/ai-nation-local
+[2026-03-22T08:12:57.071935] ✓ Check completed at 2026-03-22T08:12:55.840023
+[2026-03-22T08:12:57.071975] 状态已保存，等待下一次检查...
+[2026-03-22T09:11:54.532388] === Embassy Monitor Check ===
+[2026-03-22T09:11:54.538547] ✅ Embassy branch exists: remotes/origin/embassy
+[2026-03-22T09:11:55.399660] ✓ Check completed at 2026-03-22T09:11:54.532538
+[2026-03-22T09:11:55.399712] 状态已保存，等待下一次检查...
+[2026-03-22T10:11:53.942100] === Embassy Monitor Check ===
+[2026-03-22T10:11:53.948048] ✅ Embassy branch exists: remotes/origin/embassy
+[2026-03-22T10:11:54.842773] ✓ Check completed at 2026-03-22T10:11:53.942245
+[2026-03-22T10:11:54.842827] 状态已保存，等待下一次检查...
+[2026-03-22T11:11:56.368914] === Embassy Monitor Check ===
+[2026-03-22T11:11:56.374795] ✅ Embassy branch exists: remotes/origin/embassy
+[2026-03-22T11:11:57.277541] ✓ Check completed at 2026-03-22T11:11:56.369055
+[2026-03-22T11:11:57.277592] 状态已保存，等待下一次检查...
+[2026-03-22T12:11:55.396147] === Embassy Monitor Check ===
+[2026-03-22T12:11:55.402084] ✅ Embassy branch exists: remotes/origin/embassy
+[2026-03-22T12:11:56.339302] ✓ Check completed at 2026-03-22T12:11:55.396303
+[2026-03-22T12:11:56.339354] 状态已保存，等待下一次检查...
