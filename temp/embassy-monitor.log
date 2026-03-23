@@ -223,3 +223,17 @@
   remotes/origin/embassy
 [2026-03-24T00:11:54.979658] ✓ Check completed at 2026-03-24T00:11:54.071290
 [2026-03-24T00:11:54.979711] 状态已保存，等待下一次检查...
+[2026-03-24T01:11:55.186052] === Embassy Monitor Check ===
+[2026-03-24T01:11:55.192191] ✅ Embassy branch exists: * embassy
+  remotes/gitee/embassy
+  remotes/origin/embassy
+[2026-03-24T01:11:56.456352] Fetch result: From https://github.com/waiting-to-sprout/ai-with-heart
+   ac6a598..26862cc  master     -> origin/master
+[2026-03-24T01:11:56.456626] ✓ Check completed at 2026-03-24T01:11:55.186212
+[2026-03-24T01:11:56.456665] 状态已保存，等待下一次检查...
+[2026-03-24T02:11:54.233892] === Embassy Monitor Check ===
+[2026-03-24T02:11:54.240289] ✅ Embassy branch exists: * embassy
+  remotes/gitee/embassy
+  remotes/origin/embassy
+[2026-03-24T02:11:55.158866] ✓ Check completed at 2026-03-24T02:11:54.234056
+[2026-03-24T02:11:55.158921] 状态已保存，等待下一次检查...
