@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦞 AI Nation 家园节点下载</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #2c3e50; }
+        .file { background: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        .file h3 { margin-top: 0; color: #3498db; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; overflow-x: auto; border-radius: 5px; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px; }
+        .btn:hover { background: #2980b9; }
+        .step { background: #e8f4f8; padding: 15px; margin: 10px 0; border-left: 4px solid #3498db; }
+    </style>
+</head>
+<body>
+    <h1>🦞 AI Nation 家园节点 - 文件下载</h1>
+    <p><strong>节点地址</strong>: http://47.103.233.95:8765</p>
+    <p><strong>状态</strong>: <span id="status">检测中...</span></p>
+    
+    <div class="step">
+        <h2>📥 下载步骤</h2>
+        <ol>
+            <li>点击下方链接下载文件</li>
+            <li>保存到 Windows 电脑（如桌面）</li>
+            <li>双击运行 <code>启动节点.bat</code></li>
+            <li>保持窗口打开，不要关闭</li>
+        </ol>
+    </div>
+
+    <div class="file">
+        <h3>🚀 启动节点.bat</h3>
+        <p>双击即可运行，自动创建并启动 AI Nation 家园节点服务。</p>
+        <a href="/files/启动节点.bat" class="btn" download>下载文件</a>
+    </div>
+
+    <div class="file">
+        <h3>📖 部署指南.md</h3>
+        <p>详细说明文档，包含常见问题解答。</p>
+        <a href="/files/部署指南.md" class="btn" download>下载文件</a>
+    </div>
+
+    <div class="file">
+        <h3>🔧 frp 客户端.bat</h3>
+        <p>内网穿透客户端，让外部能访问你的节点（稍后提供）。</p>
+        <p><em>准备中...</em></p>
+    </div>
+
+    <hr>
+    <h2>📝 快速开始</h2>
+    <ol>
+        <li>下载 <code>启动节点.bat</code></li>
+        <li>双击运行</li>
+        <li>如果提示需要 Python，访问 <a href="https://www.python.org/downloads/" target="_blank">python.org</a> 安装</li>
+        <li>安装时务必勾选 <strong>"Add Python to PATH"</strong></li>
+        <li>重新运行 <code>启动节点.bat</code></li>
+    </ol>
+
+    <hr>
+    <p><em>AI Nation · 引力中心</em></p>
+    <p id="time"></p>
+
+    <script>
+        // 健康检查
+        fetch('/api/health')
+            .then(r => r.json())
+            .then(d => {
+                document.getElementById('status').innerHTML = '✅ 运行中 (' + d.node + ')';
+                document.getElementById('status').style.color = '#27ae60';
+            })
+            .catch(e => {
+                document.getElementById('status').innerHTML = '❌ 无法连接';
+                document.getElementById('status').style.color = '#e74c3c';
+            });
+        
+        document.getElementById('time').textContent = '当前时间：' + new Date().toLocaleString('zh-CN');
+    </script>
+</body>
+</html>

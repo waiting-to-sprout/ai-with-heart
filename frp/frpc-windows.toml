@@ -1,0 +1,13 @@
+# frp 客户端配置 - Windows 家园节点
+serverAddr = "47.103.233.95"
+serverPort = 7000
+auth.method = "token"
+auth.token = "ai-nation-home-node-2026"
+
+# 穿透配置：将本地 8765 端口暴露到阿里云的 8766 端口
+[[proxies]]
+name = "home-node"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8765
+remotePort = 8766
